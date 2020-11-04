@@ -110,12 +110,6 @@ nav ul li a:hover::before{
   text-transform: uppercase;
 }
 
-#front #people h1 {
-  background: rgba(255, 255, 255, 0.8);
-  padding: 1%;
-  color: #7354D1;
-}
-
 #front #news {
   display: grid;
   grid-template-columns: 1fr 1fr;
