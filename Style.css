@@ -266,7 +266,7 @@ nav ul li a:hover::before{
 }
 
 #future #futurebilde{
-  background-image: url("Librery.jpg");
+  background-image: url("Bilder/People.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -289,6 +289,7 @@ nav ul li a:hover::before{
   display:flex;
   justify-content: center;
   align-items: center;
+  flex-direction: column;
 }
 
 
