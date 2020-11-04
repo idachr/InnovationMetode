@@ -93,7 +93,7 @@ nav ul li a:hover::before{
 
 #front {
   width: 100%;
-  margin-bottom: 5%;
+  margin: 0;
 }
 
 #front #people {
@@ -121,55 +121,140 @@ nav ul li a:hover::before{
   grid-template-columns: 1fr 1fr;
 }
 
-#front #news h1 {
-  grid-column-start: 1;
-  grid-column-end: 3;
-  display: flex;
-  justify-content: center;
-  align-items:center;
-  height: 10vh;
-}
-
 #front #news .text {
   grid-column: 1fr;
-  margin: 0 2% 0 1%;
+  width: 100%;
+  height: 100%;
+  margin:0;
   display:flex;
   justify-content: center;
   align-items: center;
 }
 
-#front #news .bilde {
+#front #news #bilde1, #bilde2, #bilde3 {
   grid-column: 1fr;
-  margin: 0 1% 0 2%;
-}
-
-#front #news .bilde img {
-  max-width: 40vw;
-  margin: 2% auto;
+  margin: 0;
+  max-width: 50vw;
+  height: auto;
 }
 
 #kalender {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  grid-gap: 1%;
+  margin:0;
 }
 
-#kalender h1 {
-  grid-column-start: 1;
-  grid-column-end: 5;
-}
-
-#kalender .hendelse {
+#kalender #dato1 {
   grid-column: 1fr;
-  background-color: cyan;
-  width: 23vw;
-  display: block;
-  margin: auto;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(Bilder/Cooking.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 60vh;
+  width: 25vw;
 }
-#kalender .hendelse img {
-  width: 18vw;
-  display: block;
-  margin: auto;
+
+#kalender #dato1 .datotext {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align:center;
+}
+
+#kalender #dato2 {
+  grid-column: 1fr;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(Bilder/Soccer.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 60vh;
+  width: 25vw;
+}
+
+#kalender #dato2 .datotext {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align:center;
+}
+
+#kalender #dato3 {
+  grid-column: 1fr;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(Bilder/Birthday.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 60vh;
+  width: 25vw;
+}
+
+#kalender #dato3 .datotext {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align:center;
+}
+
+#kalender #dato4 {
+  grid-column: 1fr;
+  display: grid;
+  grid-template-rows: repeat(2, 1fr);
+  background-image: url(Bilder/Happy.jpg);
+  background-repeat: no-repeat;
+  background-position:center;
+  background-size: cover;
+  height: 60vh;
+  width: 25vw;
+}
+
+#kalender #dato4 .datotext {
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align:center;
+}
+
+footer {
+  margin: 0;
+  background-color: black;
+  height: 15vh;
+  color: white;
+}
+
+footer ul {
+  margin: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  flex-direction: row;
+  flex-wrap: wrap;
   padding-top: 2%;
+  text-align:center;
+}
+
+footer ul li {
+  width: calc(100%/4);
+}
+
+footer ul a {
+  text-decoration:none;
+  color: white;
+}
+
+footer ul a:hover {
+  text-decoration:none;
+  color: #7354D1;
 
 }
+
+
+
+
+
+
+
+
+.
