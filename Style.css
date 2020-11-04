@@ -259,6 +259,40 @@ nav ul li a:hover::before{
 }
 /*---------------------------------------------------------------------------------- Fremtid */
 
+
+#future {
+  width: 100%;
+  margin: 0;
+}
+
+#future #futurebilde{
+  background-image: url("Librery.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 100vw auto;
+  height: 60vh;
+  width: 100vw;
+
+}
+
+#future #info {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+#future #info .text {
+  grid-column: 1fr;
+  width: 100%;
+  height: 100%;
+  margin:0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+
 /*---------------------------------------------------------------------------------- registrering */
 
 #registrering {
