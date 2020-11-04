@@ -10,7 +10,7 @@
   <body>
 
     <div class="header">
-      <a href="index.html"><img src="Bilder/Logo4.png" alt="Logo" class="logo"></a>
+      <a href="index.html"><img src="Bilder/Logo6.png" alt="Logo" class="logo"></a>
       <div class="container">
           <nav>
             <ul>
@@ -24,34 +24,82 @@
 
     </div>
     <form>
-    <div class="container">
-        <h1>Register</h1>
-        <p>Please fill this form and volunteer.</p>
-        <hr>
-        <label for="email"><b> Full Name</b></label>
-        <input type="text" placeholder="Enter Name" name="name" id="name" required>
+      <div id="registrering">
+        <div id="Noe"></div>
+        <div id="reg">
+        <div class="form">
+            <h2>Sign up as a volunteer</h2>
+            <div class="form">
+              <form action="/Registrering.html">
+                <label for="fname">Full Name</label><br>
+                <input type="text" id="fname" name="fullname" placeholder="Your name.." required><br><br>
 
+                <label for="lname">Email</label><br>
+                <input type="text" id="email" name="email" placeholder="Your email.." required> <br><br>
 
-        <label for="email"><b>Email</b></label>
-        <input type="text" placeholder="Enter Email" name="email" id="email" required>
+                <label for="gender">Gender</label><br>
+                <select id="gender" name="gender">
+                  <option value="male">Male</option>
+                  <option value="female">Female</option>
+                  <option value="other">Other</option>
+                </select><br><br>
 
-        <label for="psw"><b>Password</b></label>
-        <input type="password" placeholder="Enter Password" name="psw" id="psw" required>
+                <label for="work">Kind of Work</label><br>
+                <select id="work" name="work">
+                  <option value="Libraryhelp">Library help</option>
+                  <option value="Contructionworker">Contruction worker</option>
+                </select><br><br>
 
-        <label for="psw-repeat"><b>Repeat Password</b></label>
-        <input type="password" placeholder="Repeat Password" name="psw-repeat" id="psw-repeat" required>
-        <hr>
+                <label for="continent">Desired continent</label><br>
+                <select id="continent" name="continent">
+                  <option value="africa">Africa</option>
+                  <option value="asia">Asia</option>
+                  <option value="south-america">South-America</option>
+                </select><br><br>
 
-        <button type="submit" class="registerbtn">Register</button>
+                <button type="submit" class="registerbtn">Register</button>
+
+              </form>
+            </div>
+            <h2>
+              Requrements
+            </h2>
+            <ul>
+              <li>
+                Police certificate (sent to us by email)
+              </li>
+              <li>
+                Expect to be placed in a different continent than desired
+              </li>
+              Must work at least 4 weeks
+              <li>
+
+              </li>
+            </ul>
+        </div>
+        <img src="Bilder/happyco.jpg" alt="Noe" id="Bilde1">
     </div>
-
-    <div class="container signin">
-        <p>Do you have any qoustion? contact us here
-        <a class="button" href="Contact.html">Contact form</a></p>
     </div>
 </form>
 
-    
+<footer>
+  <ul>
+    <li>
+      Rue de Piétrain 90, 5377 Noiseux, Belgium
+    </li>
+    <li>
+      <a href="mailto: Lucra@help.com">Lucra@help.com</a>
+    </li>
+    <li>
+      <a href="Registrering.html">Volenteer</a>
+    </li>
+    <li>
+      0489 82 06085
+    </li>
+  </ul>
+</footer>
+
+
 
   </body>
 </html>

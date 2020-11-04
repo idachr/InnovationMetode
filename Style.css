@@ -222,7 +222,7 @@ nav ul li a:hover::before{
 }
 
 #omoss #us {
-  background-image: url("Bilder/People.jpg");
+  background-image: url("Bilder/gutt.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -261,55 +261,70 @@ nav ul li a:hover::before{
 
 /*---------------------------------------------------------------------------------- registrering */
 
-*{
-  box-sizing: border-box;
-
-
+#registrering {
+  margin: 0;
 }
 
+#registrering #Noe {
+  background-image:url("Bilder/happypo.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center center;
+  background-size: 100vw auto;
+  height: 60vh;
+  width: 100vw;
+}
 
-.container {
-   padding: 20px;
-   background-color: white;
+#reg {
+  display: grid;
+  grid-template-columns:Repeat(2, 1fr);
+}
 
-     right: 30%;
-     margin: 20px;
-     max-width: 500px;
-     padding: 16px;
-     background-color: white;
+#reg .form {
+  grid-column: 1fr;
+   display: block;
+   margin: 0 2%;
+   width: 98%;
+   height: auto;
+   text-align: center;
 
  }
 
-input[type=text], input[type=password] {
-  width: 100%;
-  padding: 15px;
-  margin: 6px 0 20px 0;
+ #reg #Bilde1 {
+   grid-column: 1fr;
+   margin: 0;
+   max-width: 50vw;
+   height: auto;
+ }
+
+input[type=text]  {
+  width: 50%;
+  padding: 1%;
   display: inline-block;
   border: none;
 
   background: #f1f1f1;
 }
 
-input[type=text]:focus, input[type=password]:focus {
+input[type=text]:focus {
   background-color: #ddd;
   outline: none;
 }
 
-
-hr {
-  border: 1px solid #f1f1f1;
-  margin-bottom: 25px;
+.gender, .work, .continent {
+  margin: 1% 0;
 }
 
 
 .registerbtn {
-  background-color: #facdec;
-  color: ;
-  padding: 16px 20px;
-  margin: 8px 0;
+  display: block;
+
+  background-color: #E1E3FF;
+  padding: 2% 0;
+  margin: 2% auto;
   border: none;
   cursor: pointer;
-  width: 100%;
+  width: 20%;
   opacity: 0.9;
 }
 .button{
@@ -318,6 +333,11 @@ hr {
 
 .registerbtn:hover {
   opacity: 1;
+  background-color: #35DFED;
+}
+
+#registrering ul {
+  list-style: none;
 }
 
 
