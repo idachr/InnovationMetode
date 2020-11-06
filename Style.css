@@ -132,7 +132,7 @@ nav ul li a:hover::before{
 #front #news #bilde1, #bilde2, #bilde3 {
   grid-column: 1fr;
   margin: 0;
-  max-width: 50vw;
+  max-width: 100%;
   height: auto;
 }
 
@@ -254,7 +254,7 @@ nav ul li a:hover::before{
 #omoss #oss #bilde1, #bilde2, #bilde3 {
   grid-column: 1fr;
   margin: 0;
-  max-width: 50vw;
+  max-width: 100%;
   height: auto;
 }
 /*---------------------------------------------------------------------------------- Fremtid */
@@ -266,7 +266,7 @@ nav ul li a:hover::before{
 }
 
 #future #futurebilde{
-  background-image: url("Bilder/People.jpg");
+  background-image: url("Bilder/barnmedbøker.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center center;
@@ -283,13 +283,18 @@ nav ul li a:hover::before{
 
 #future #info .text {
   grid-column: 1fr;
-  width: 100%;
+  width: 95%;
   height: 100%;
+  padding: 0 5%;
   margin:0;
   display:flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+#future #info #bilde1{
+  width: 100%;
 }
 
 
@@ -328,7 +333,7 @@ nav ul li a:hover::before{
  #registrering #Bilde1 {
    grid-column: 1fr;
    margin: 0;
-   width: 50vw;
+   width: 100%;
    height: auto;
  }
 
@@ -415,7 +420,137 @@ footer ul a:hover {
 
 /*---------------------------------------------------------------------------------- @media */
 
+@media screen and (max-width: 687px) {
 
+  .header {
+    background-color: white;
+    height: 30vh;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .container {
+    margin: 0;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+  }
+
+  #front #people {
+    background-image: url("Bilder/People.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+    width: 100%}
+
+  #front #news {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
+  #kalender {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin:0;
+  }
+  #kalender #dato1{
+    width: 100vw;
+  }
+
+  #kalender #dato2{
+    width: 100vw;
+  }
+
+  #kalender #dato3{
+    width: 100vw;
+  }
+  #kalender #dato4{
+    width: 100vw;
+  }
+
+  #omoss #us {
+    background-image: url("Bilder/gutt.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  #omoss #oss {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #future #futurebilde{
+    background-image: url("Bilder/barnmedbøker.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+
+  }
+
+  #future #info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #registrering #Noe {
+    background-image:url("Bilder/happypo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  #reg {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  footer {
+    height: auto;
+  }
+
+  footer ul {
+    flex-direction:column;
+  }
+
+  footer li, footer a {
+    font-size: 12px;
+    padding: 2%;
+  }
+
+
+}
+
+@@media screen and (max-width: 875) {
+
+}
+
+@@media screen and (max-width: 1000) {
+
+}
 
 
 
