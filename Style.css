@@ -9,6 +9,10 @@ h1, h2, h3 {
   text-align: center;
 }
 
+p, a, li{
+  font-size: 18px;
+}
+
 .header {
   background-color: white;
   height: 10vh;
@@ -37,7 +41,7 @@ h1, h2, h3 {
 
 .logo {
   float: left;
-  padding: 10px 0;
+  padding: 0;
   height: 10vh;
   margin-left: 5%;
 }
@@ -67,7 +71,7 @@ nav ul li a {
   color: black;
   text-decoration: none;
   text-transform: uppercase;
-  font-size: 14px;
+  font-size: 20px;
 
 }
 
@@ -131,8 +135,8 @@ nav ul li a:hover::before{
 
 #front #news #bilde1, #bilde2, #bilde3 {
   grid-column: 1fr;
-  margin: 0;
-  max-width: 100%;
+  margin: 0 auto;
+  width: 100%;
   height: auto;
 }
 
@@ -253,7 +257,7 @@ nav ul li a:hover::before{
 
 #omoss #oss #bilde1, #bilde2, #bilde3 {
   grid-column: 1fr;
-  margin: 0;
+  margin: 0 auto;
   max-width: 100%;
   height: auto;
 }
@@ -295,6 +299,7 @@ nav ul li a:hover::before{
 
 #future #info #bilde1{
   width: 100%;
+  margin: 0 auto;
 }
 
 
@@ -332,7 +337,7 @@ nav ul li a:hover::before{
 
  #registrering #Bilde1 {
    grid-column: 1fr;
-   margin: 0;
+   margin: 0 auto;
    width: 100%;
    height: auto;
  }
@@ -388,6 +393,7 @@ footer {
   background-color: black;
   height: 15vh;
   color: white;
+  font-size: 15px;
 }
 
 footer ul {
@@ -422,26 +428,12 @@ footer ul a:hover {
 
 @media screen and (max-width: 687px) {
 
-  .header {
-    background-color: white;
-    height: 30vh;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    align-items:center;
-    position: relative;
-    flex-direction: column;
-  }
+  nav ul li a {
+    color: black;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 17px;
 
-  .container {
-    margin: 0;
-  }
-
-  nav ul {
-    display: flex;
-    flex-direction:column;
-    justify-content: center;
-    align-items:center;
   }
 
   #front #people {
@@ -455,27 +447,6 @@ footer ul a:hover {
   #front #news {
     display: grid;
     grid-template-columns: 1fr;
-  }
-
-
-  #kalender {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    margin:0;
-  }
-  #kalender #dato1{
-    width: 100vw;
-  }
-
-  #kalender #dato2{
-    width: 100vw;
-  }
-
-  #kalender #dato3{
-    width: 100vw;
-  }
-  #kalender #dato4{
-    width: 100vw;
   }
 
   #omoss #us {
@@ -537,21 +508,125 @@ footer ul a:hover {
   }
 
   footer li, footer a {
-    font-size: 12px;
     padding: 2%;
   }
 
 
 }
 
-@@media screen and (max-width: 875) {
+@media screen and (max-width: 860px){
+
+  .header {
+    background-color: white;
+    height: auto;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    position: relative;
+    flex-direction: column;
+  }
+
+  .container {
+    margin: 0;
+    height: auto;
+    margin-bottom: 1%;
+  }
+
+  nav ul {
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:center;
+  }
 
 }
 
-@@media screen and (max-width: 1000) {
+@media screen and (max-width: 995px) {
+
+  #front #people {
+    background-image: url("Bilder/People.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    height: 60vh;
+    width: 100%}
+
+  #front #news {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #kalender {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin:0;
+  }
+  #kalender #dato1{
+    width: 50vw;
+  }
+
+  #kalender #dato2{
+    width: 50vw;
+  }
+
+  #kalender #dato3{
+    width: 50vw;
+  }
+  #kalender #dato4{
+    width: 50vw;
+  }
+
+  #omoss #us {
+    background-image: url("Bilder/gutt.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    text-transform: uppercase;
+  }
+
+  #omoss #oss {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #future #futurebilde{
+    background-image: url("Bilder/barnmedbøker.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+
+  }
+
+  #future #info {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  #registrering #Noe {
+    background-image:url("Bilder/happypo.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center center;
+    background-size: cover;
+    height: 60vh;
+    width: 100vw;
+  }
+
+  #reg {
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+
 
 }
-
-
-
-.
